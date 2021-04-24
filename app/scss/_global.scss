@@ -73,14 +73,16 @@ body {
 	margin-right: 13px;
 }
 .breadcrumbs {
+	display: inline;
 	&__inner {
 		padding: 45px 0px 40px;
+		overflow: hidden;
+		width: 1200px;
 	}
 	&__list {
 		li {
 			display: inline-block;
 			position: relative;
-			padding: 30px 0px;
 			& + li {
 				padding-left: 24px;
 				&::before {
@@ -113,4 +115,7 @@ body {
 		color: $green;
 		font-size: 14px;
 	}
+}
+#modal {
+	display: none;
 }
